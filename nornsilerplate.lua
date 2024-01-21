@@ -15,7 +15,7 @@ local _grid=include(SCRIPT_NAME.."/lib/_grid")
 engine.name = 'PolyPerc'
 
 function init() ------------------------------ init() is automatically called by norns
-    message = "NORNSILERPLATE" ----------------- set our initial message
+    message = SCRIPT_NAME ----------------- set our initial message
     g=_grid:new()
     screen_dirty = true ------------------------ ensure we only redraw when something changes
     redraw_clock_id = clock.run(redraw_clock) -- create a "redraw_clock" and note the id

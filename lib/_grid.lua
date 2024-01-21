@@ -33,7 +33,6 @@ function _grid:init_grid_momentary()
 end
 
 function _grid:init_grid_visual()
-  print("yaya")
   local visual={}
   for x=1,16 do
       visual[x]={}
@@ -45,7 +44,15 @@ function _grid:init_grid_visual()
 end
 
 function _grid:grid_key(x,y,z)
-    self.momentary[x][y] = z == 1 and 1 or 0
+    local on = z==1
+    self.momentary[x][y] = on == 1 and 1 or 0
+
+    if on then
+      
+    else
+
+    end
+
     screen_dirty = true
     self.grid_dirty = true
 end

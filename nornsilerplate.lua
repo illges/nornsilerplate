@@ -9,7 +9,8 @@
 
 ---@diagnostic disable: undefined-global, lowercase-global
 
-_grid=include("nornsilerplate/lib/_grid")
+SCRIPT_NAME = "nornsilerplate"
+local _grid=include(SCRIPT_NAME.."/lib/_grid")
 
 engine.name = 'PolyPerc'
 

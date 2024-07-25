@@ -45,7 +45,7 @@ end
 
 function _grid:grid_key(x,y,z)
     local on = z==1
-    self.momentary[x][y] = on == 1 and 1 or 0
+    self.momentary[x][y] = on and 1 or 0
 
     if on then
       
